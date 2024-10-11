@@ -1,0 +1,194 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+.c-bodypage{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    height: 100vh;
+    margin: 0px;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+body{
+    
+}
+
+.c-header{
+    background-color: white;
+    grid-area: header;
+    border-radius: 15px 15px 0px 0px;
+    height: 200px;
+}
+.imglogo{
+    width: 291.5px;
+    height: 156.5px;
+    display: block;
+    margin: 0px auto;
+}
+
+
+.titulo{
+    text-align: center;
+    margin: 10px;
+    color: rgb(230, 4, 4);
+    font-weight: normal;
+}
+
+
+
+.c-main{
+    background-color: rgb(255, 255, 255);
+    grid-area: main;
+}
+
+.p1{
+    text-align: justify;
+    margin: 15px 15px 15px 15px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba(248, 4, 4, 0.562);
+ }
+
+.p2{
+    text-align: justify;
+    margin: 15px 15px 15px 15px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba(248, 4, 4, 0.562);
+ }
+
+.p3{
+    text-align: justify;
+    margin: 15px 15px 15px 15px;
+ }
+
+ .botao{
+    text-align: center;
+    margin: 30px;
+ }
+
+ .c-main a{
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    background-color: rgb(81, 182, 98);
+    border-radius: 50px;
+    padding: 15px 50px 15px 50px;
+    color: white;
+    margin: auto;
+ }
+
+ .p4{
+    text-align: center;
+    padding-bottom: 15px;
+    margin: 15px 15px 0px 15px;
+    border-bottom: 2px solid rgba(248, 4, 4, 0.562);
+ }
+
+ /*================================= footer ======================================*/
+
+.c-footer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 30px;;
+    grid-template-areas: 
+    "titulo"
+    "endereco"
+    "outros";
+}
+
+.c-footer{
+    background-color: rgb(255, 255, 255);
+    grid-area: footer;
+}
+/*======================== titulo ================================*/
+
+.c-titulo{
+    grid-area: titulo;
+    position: relative;
+    height: 30px;
+    width: 200px;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.t-titulo{
+    top: 3px;
+    font-weight: bolder;
+    font-size: 17px;
+    position: absolute;
+    width: 180px;
+    left: 11px;
+}
+
+/*======================== endereco ================================*/
+
+.c-endereco{
+    background-color: rgb(255, 255, 255);
+    grid-area: endereco;
+    margin: auto;
+    position: relative;
+    height: 40px;
+    width: 300px;
+}
+
+
+.t-localiza{
+    font-weight: normal;
+    position: absolute;
+    left: 10px;
+    font-size: 17px;
+}
+
+/*======================== outros ================================*/
+
+.c-outros{
+    background-color: rgb(255, 255, 255);
+    grid-area: outros;
+    position: relative;
+    width: 150px;
+    top:2px;
+    margin: auto;
+    padding: 10px 0px 10px 0px;
+}
+
+.t-email{
+    position: relative;
+    right: 27px;
+    margin: 0px 0px 4px 0px;
+}
+
+.tfone{
+    position: relative;
+    right: -15px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .c-bodypage{
+        width: 600px;
+        margin: auto;
+    }
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
